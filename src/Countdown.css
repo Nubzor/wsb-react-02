@@ -1,0 +1,9 @@
+.countdown {
+    background: gray;
+    padding: 2em;
+}
+
+.danger {
+    background-color: red;
+    padding: 1em;
+}
