@@ -16,30 +16,6 @@ const paragrafData = [
     name: 'Mateusz',
     surname: 'Marzecki',
   },
-  {
-    name: 'Ala',
-    surname: 'Trololo',
-  },
-  {
-    name: 'Ola',
-    surname: 'Tralalal',
-  },
-  {
-    name: 'Ela',
-    surname: 'Czaczacza',
-  },
-  {
-    name: 'Dawid',
-    surname: 'FooBarFoo',
-  },
-  {
-    name: 'Asia',
-    surname: 'Kasia',
-  },
-  {
-    name: 'Jan',
-    surname: 'Niezbedny',
-  }
 ];
 
 const linkData = [

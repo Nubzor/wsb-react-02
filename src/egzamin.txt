@@ -1,0 +1,4 @@
+1. Wskaz prawidłowe określenie komponentu
+2. Czym jest VirtualDom?
+3. Co to jest JSX?
+4. Ile elementów zwraca JSX?
