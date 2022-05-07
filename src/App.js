@@ -42,6 +42,29 @@ const paragrafData = [
   }
 ];
 
+const linkData = [
+  {
+    name: 'Learn React',
+    href: 'https://reactjs.org',
+  },
+  {
+    name: 'Wirtualna Polska',
+    href: 'https://wp.pl',
+  },
+  {
+    name: 'Onet',
+    href: 'https://onet.pl',
+  },
+  {
+    name: 'Interia',
+    href: 'https://interia.pl',
+  },
+  {
+    name: 'Trójmiasto.pl',
+    href: 'https://trojmiasto.pl',
+  }
+];
+
 class App extends React.Component {
   render() {
     return (
@@ -53,22 +76,10 @@ class App extends React.Component {
               return <Paragraph name={element.name} surname={element.surname} />
           }) }
           <div></div>
-          <Link
-            name="Learn React"
-            href="https://reactjs.org" />
-          <Link
-            name="Wirtualna Polska"
-            href="https://wp.pl" />
-          <Link
-            name="Onet"
-            href="https://onet.pl" />
-          <Link
-            name="Interia"
-            href="https://interia.pl" />
-          <Link
-            name="Trójmiasto.pl"
-            href="https://trojmiasto.pl" />
-
+          { linkData.map(function(element) {
+            // element -> obiekt { name: 'xxx', href: 'yyy' }
+            return <Link name={element.name} href={element.href} />
+          })}
         </header>
       </main>
     );
