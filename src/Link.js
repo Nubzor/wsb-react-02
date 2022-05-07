@@ -1,16 +1,15 @@
-import React from 'react'
+// class component -> this.props.nazwaPropsa
+// function component (arg) -> props.nazwaPropsa
 
-class Link extends React.Component {
-    render() {
-        return <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            Learn React
-        </a>;
-    }
+function Link(props) {
+    return <a
+        className="App-link"
+        href={props.href}
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        { props.name }
+    </a>;
 }
 
 export default Link;
