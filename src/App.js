@@ -5,6 +5,8 @@ import Img from './Img';
 import Counter from './Counter';
 import Link from './Link';
 
+import Countdown from './Countdown';
+
 // 1 - wydzielnie img do osobnego komponentu funkcyjnego
 // 2 - wydzielenie paragrafu (<p>) do osobnego komponentu klasowego
 
@@ -47,6 +49,7 @@ class App extends React.Component {
       <main className="App">
         <header className="App-header">
           <Img />
+          <Countdown />
           { paragrafData.map(function(element) {
               // element -> obiekt { name: 'xxx', surname: 'yyy' }
               return <Counter />
