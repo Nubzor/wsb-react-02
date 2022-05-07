@@ -5,7 +5,7 @@ import React from 'react';
 // this.props.name -> 
 //    gdzie "name" to nazwa atrybutu z wywołania JSX
 
-class Paragraph extends React.Component {
+class Counter extends React.Component {
     intervalId = null;
 
     constructor() {
@@ -55,4 +55,4 @@ class Paragraph extends React.Component {
     }
 }
 
-export default Paragraph;
+export default Counter;

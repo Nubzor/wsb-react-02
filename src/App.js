@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react';
 
 import Img from './Img';
-import Paragraph from './Paragraph';
+import Counter from './Counter';
 import Link from './Link';
 
 // 1 - wydzielnie img do osobnego komponentu funkcyjnego
@@ -49,7 +49,7 @@ class App extends React.Component {
           <Img />
           { paragrafData.map(function(element) {
               // element -> obiekt { name: 'xxx', surname: 'yyy' }
-              return <Paragraph name={element.name} surname={element.surname} />
+              return <Counter />
           }) }
           <div></div>
           { linkData.map(function(element) {
